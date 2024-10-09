@@ -11,7 +11,7 @@
       steps:
         - name: Checkout repository
           uses: actions/checkout@v2
-          
+
         - name: Set up Node.js env
           uses: actions/setup-node@v2
           with:
@@ -21,8 +21,9 @@
           run: npm install
           working-directory: ./jaivikasgn2
 
-        # - name: Run tests
-        #   run: npm test
+        - name: Run tests
+          run: npm test
+          working-directory: ./jaivikasgn2
 
         - name: Build project
           run: npm run build
