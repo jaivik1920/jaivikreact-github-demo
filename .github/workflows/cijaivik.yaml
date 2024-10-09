@@ -11,12 +11,7 @@
       steps:
         - name: Checkout repository
           uses: actions/checkout@v2
-
-        - name: Show current directory and list files
-          run: |
-          pwd
-          ls -la
-
+          
         - name: Set up Node.js env
           uses: actions/setup-node@v2
           with:
